@@ -1,0 +1,202 @@
+ ---------- Appliances in the Dataset ------------
+                            Appliances
+0                      Coffee machines
+1   Computers stations (with monitors)
+2                                 Fans
+3                 Fridges and freezers
+4      Hi-Fi systems (with CD players)
+5                              Kettles
+6          Lamps (compact fluorescent)
+7                 Lamps (incandescent)
+8               Laptops (via chargers)
+9                      Microwave ovens
+10        Mobile phones (via chargers)
+11                            Monitors
+12                            Printers
+13              Shavers (via chargers)
+14            Televisions (LCD or LED)
+
+ ------------------ Reading Training Data -------------------
+ ---- Reading data with filter True
+
+Reading Instance 0 for Coffee machines
+Reading Instance 1 for Coffee machines
+Reading Instance 2 for Coffee machines
+Reading Instance 3 for Coffee machines
+Reading Instance 4 for Coffee machines
+Reading Instance 5 for Coffee machines
+Reading Instance 6 for Coffee machines
+Reading Instance 7 for Coffee machines
+Reading Instance 8 for Coffee machines
+Reading Instance 9 for Coffee machines
+Reading Instance 10 for Coffee machines
+Reading Instance 11 for Coffee machines
+Reading Instance 12 for Coffee machines
+Reading Instance 13 for Coffee machines
+Reading Instance 14 for Coffee machines
+Reading Instance 0 for Computers stations (with monitors)
+Reading Instance 1 for Computers stations (with monitors)
+Reading Instance 2 for Computers stations (with monitors)
+Reading Instance 3 for Computers stations (with monitors)
+Reading Instance 4 for Computers stations (with monitors)
+Reading Instance 5 for Computers stations (with monitors)
+Reading Instance 6 for Computers stations (with monitors)
+Reading Instance 7 for Computers stations (with monitors)
+Reading Instance 8 for Computers stations (with monitors)
+Reading Instance 9 for Computers stations (with monitors)
+Reading Instance 10 for Computers stations (with monitors)
+Reading Instance 11 for Computers stations (with monitors)
+Reading Instance 12 for Computers stations (with monitors)
+Reading Instance 13 for Computers stations (with monitors)
+Reading Instance 14 for Computers stations (with monitors)
+Reading Instance 0 for Kettles
+Reading Instance 1 for Kettles
+Reading Instance 2 for Kettles
+Reading Instance 3 for Kettles
+Reading Instance 4 for Kettles
+Reading Instance 5 for Kettles
+Reading Instance 6 for Kettles
+Reading Instance 7 for Kettles
+Reading Instance 8 for Kettles
+Reading Instance 9 for Kettles
+Reading Instance 10 for Kettles
+Reading Instance 11 for Kettles
+Reading Instance 12 for Kettles
+Reading Instance 13 for Kettles
+Reading Instance 14 for Kettles
+Reading Instance 0 for Fridges and freezers
+Reading Instance 1 for Fridges and freezers
+Reading Instance 2 for Fridges and freezers
+Reading Instance 3 for Fridges and freezers
+Reading Instance 4 for Fridges and freezers
+Reading Instance 5 for Fridges and freezers
+Reading Instance 6 for Fridges and freezers
+Reading Instance 7 for Fridges and freezers
+Reading Instance 8 for Fridges and freezers
+Reading Instance 9 for Fridges and freezers
+Reading Instance 10 for Fridges and freezers
+Reading Instance 11 for Fridges and freezers
+Reading Instance 12 for Fridges and freezers
+Reading Instance 13 for Fridges and freezers
+Reading Instance 14 for Fridges and freezers
+Reading Instance 0 for Microwave ovens
+Reading Instance 1 for Microwave ovens
+Reading Instance 2 for Microwave ovens
+Reading Instance 3 for Microwave ovens
+Reading Instance 4 for Microwave ovens
+Reading Instance 5 for Microwave ovens
+Reading Instance 6 for Microwave ovens
+Reading Instance 7 for Microwave ovens
+Reading Instance 8 for Microwave ovens
+Reading Instance 9 for Microwave ovens
+Reading Instance 10 for Microwave ovens
+Reading Instance 11 for Microwave ovens
+Reading Instance 12 for Microwave ovens
+Reading Instance 13 for Microwave ovens
+Reading Instance 14 for Microwave ovens
+
+ ---------- Data Summary ------------
+Appliances in the Data:  ['Coffee,', 'Computer,', 'Kettle,', 'Fridge,', 'Microwave,']
+Instances for each appliances: #15: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+Length of Dataset for appliance
+Coffee, : 260
+Computer, : 3557
+Kettle, : 761
+Fridge, : 1894
+Microwave, : 1844
+
+ ------------------ Reading Test Data -------------------
+ ---- Reading data with filter False
+
+Reading Instance 5 for Coffee machines
+Reading Instance 5 for Computers stations (with monitors)
+Reading Instance 5 for Kettles
+Reading Instance 5 for Fridges and freezers
+Reading Instance 5 for Microwave ovens
+
+ ---------- Data Summary ------------
+Appliances in the Data:  ['Coffee,', 'Computer,', 'Kettle,', 'Fridge,', 'Microwave,']
+Instances for each appliances: #1: [5]
+Length of Dataset for appliance
+Coffee, : 361
+Computer, : 360
+Kettle, : 359
+Fridge, : 359
+Microwave, : 360
+
+The aggregated time series contains...
+Microwave,
+['Kettle,', 'Computer,']
+['Fridge,', 'Kettle,', 'Microwave,']
+Computer,
+['Computer,', 'Microwave,']
+['Coffee,', 'Kettle,', 'Microwave,']
+
+ ------------------ Modelling Data -------------------
+Number of cluster for Coffee, :          3
+Number of cluster for Computer, :        2
+Number of cluster for Fridge, :          7
+Number of cluster for Kettle, :          5
+Number of cluster for Microwave, :       2
+
+ ------------------ Aggregating Models -------------------
+
+ Number of merged clusters: 92
+-------------------Model Test---------------------------
+Length of the Aggregated signal 2408
+Prediction for the datapoint 0: GND
+Prediction for the datapoint 100: Microwave
+Prediction for the datapoint 200: GND
+Prediction for the datapoint 300: Microwave
+Prediction for the datapoint 400: GND
+Prediction for the datapoint 500: ComputerKettle
+Prediction for the datapoint 600: Computer
+Prediction for the datapoint 700: Computer
+Prediction for the datapoint 800: GND
+Prediction for the datapoint 900: Microwave
+Prediction for the datapoint 1000: Fridge
+Prediction for the datapoint 1100: Fridge
+Prediction for the datapoint 1200: Computer
+Prediction for the datapoint 1300: Microwave
+Prediction for the datapoint 1400: Computer
+Prediction for the datapoint 1500: Computer
+Prediction for the datapoint 1600: Computer
+Prediction for the datapoint 1700: Microwave
+Prediction for the datapoint 1800: Computer
+Prediction for the datapoint 1900: Computer
+Prediction for the datapoint 2000: GND
+Prediction for the datapoint 2100: KettleMicrowave
+Prediction for the datapoint 2200: Microwave
+Prediction for the datapoint 2300: GND
+Prediction for the datapoint 2400: GND
+------------------- Accuracy Metrics ---------------------------
+
+------ Evaluation for Coffee
+Precision :0.47368421052631576
+Recall    :0.10027855153203342
+Accuracy  :0.8492524916943521
+F_score   :0.16551724137931034
+
+------ Evaluation for Computer
+Precision :0.9381541389153187
+Recall    :0.9138090824837812
+Accuracy  :0.9343853820598007
+F_score   :0.9258215962441315
+
+------ Evaluation for Fridge
+Precision :0.8091603053435115
+Recall    :0.5905292479108635
+Accuracy  :0.9181893687707641
+F_score   :0.6827697262479872
+
+------ Evaluation for Kettle
+Precision :0.9797297297297297
+Recall    :0.13463324048282266
+Accuracy  :0.6117109634551495
+F_score   :0.23673469387755103
+
+------ Evaluation for Microwave
+Precision :0.9176672384219554
+Recall    :0.3720445062586926
+Accuracy  :0.6050664451827242
+F_score   :0.5294408708560119
